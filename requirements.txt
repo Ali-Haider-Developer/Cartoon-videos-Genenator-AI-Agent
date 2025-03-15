@@ -1,0 +1,23 @@
+setuptools>=65.5.1
+wheel>=0.38.4
+fastapi
+uvicorn
+python-dotenv
+openai
+opencv-python
+numpy
+Pillow
+requests
+diffusers>=0.25.0
+torch>=2.0.0
+accelerate>=0.25.0
+safetensors>=0.4.0
+transformers>=4.36.0
+langgraph==0.0.15
+moviepy==1.0.3
+decorator==4.4.2
+imageio==2.9.0
+imageio-ffmpeg==0.4.5
+proglog==0.1.10
+tqdm==4.65.0
+sentence-transformers==2.2.2  # For similarity checking 

@@ -1,7 +1,7 @@
 # Environment variables
 .env
 .env.*
-!.env.example
+.env.example
 
 # Python
 __pycache__/
@@ -15,3 +15,31 @@ wheels/
 # Virtual environments
 .venv
 storage/
+
+# Create new repo
+cd ..
+mkdir AI-Video-New
+cd AI-Video-New
+git init
+
+# Copy files (excluding .env and .git)
+xcopy "..\AI Video\*" . /E /exclude:.env,.git
+
+# Create proper .gitignore
+echo ".env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+storage/" > .gitignore
+
+# Add and commit files
+git add .
+git commit -m "Initial commit"
+
+# Set up remote and push
+git branch -M main
+git remote add origin https://github.com/Ali-Haider-Developer/Cartoon-videos-Genenator-AI-Agent.git
+git push -f origin main
